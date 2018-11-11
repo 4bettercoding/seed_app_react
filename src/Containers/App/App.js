@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.scss';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Routes } from './Containers/Routes'
-import { MainNavigation } from './Containers/MainNavigation'
+import { Routes } from '../Routes'
+import { MainNavigation } from '../MainNavigation'
 
 
 class  App extends Component {
