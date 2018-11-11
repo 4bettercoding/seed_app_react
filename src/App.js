@@ -7,11 +7,14 @@ import { MainNavigation } from './Containers/MainNavigation'
 
 
 class  App extends Component {
+
   render() {
+
     return (
+
         <Router>
-          <div className="App">
-            <header className="App-header">
+          <div className="app">
+            <header className="header">
               {/*<img src={logo} className="App-logo" alt="logo" />*/}
               <p>
                 Edit <code>src/App.js</code> and save to reload.

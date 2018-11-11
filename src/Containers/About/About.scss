@@ -1,0 +1,18 @@
+.About {
+
+  border: blue 1px solid;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-Header {
+
+    color: yellow;
+    background-color: blue;
+    border: blue 1px solid;
+
+  }
+
+}
+
