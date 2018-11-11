@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.scss';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Routes } from '../Routes'
-import { MainNavigation } from '../MainNavigation'
+import { Main } from '../Navigation/Main'
 
 
 class  App extends Component {
@@ -29,7 +29,7 @@ class  App extends Component {
               {/*</a>*/}
 
             </header>
-              <MainNavigation/>
+              <Main/>
               <Routes/>
           </div>
         </Router>

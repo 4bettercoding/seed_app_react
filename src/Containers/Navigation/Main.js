@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import React from "react";
 
-const MainNavigation = () => {
+const Main = () => {
     return (
         <div>
             <Link to="/">
@@ -23,4 +23,4 @@ const MainNavigation = () => {
     );
 };
 
-export { MainNavigation }
+export { Main }
