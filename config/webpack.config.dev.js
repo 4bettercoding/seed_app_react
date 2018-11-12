@@ -272,7 +272,7 @@ module.exports = {
           // "style" loader turns CSS into JS modules that inject <style> tags.
           // In production, we use a plugin to extract that CSS to a file, but
           // in development "style" loader enables hot editing of CSS.
-          // By default we support CSS Containers with the extension .module.css
+          // By default we support CSS components with the extension .module.css
           {
             test: cssRegex,
             exclude: cssModuleRegex,
@@ -280,7 +280,7 @@ module.exports = {
               importLoaders: 1,
             }),
           },
-          // Adds support for CSS Containers (https://github.com/css-modules/css-modules)
+          // Adds support for CSS components (https://github.com/css-modules/css-modules)
           // using the extension .module.css
           {
             test: cssModuleRegex,
@@ -293,14 +293,14 @@ module.exports = {
           // Opt-in support for SASS (using .scss or .sass extensions).
           // Chains the sass-loader with the css-loader and the style-loader
           // to immediately apply all styles to the DOM.
-          // By default we support SASS Containers with the
+          // By default we support SASS components with the
           // extensions .module.scss or .module.sass
           {
             test: sassRegex,
             exclude: sassModuleRegex,
             use: getStyleLoaders({ importLoaders: 2 }, 'sass-loader'),
           },
-          // Adds support for CSS Containers, but using SASS
+          // Adds support for CSS components, but using SASS
           // using the extension .module.scss or .module.sass
           {
             test: sassModuleRegex,

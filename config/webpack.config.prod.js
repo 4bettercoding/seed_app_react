@@ -343,7 +343,7 @@ module.exports = {
           // "css" loader resolves paths in CSS and adds assets as dependencies.
           // `MiniCSSExtractPlugin` extracts styles into CSS
           // files. If you use code splitting, async bundles will have their own separate CSS chunk file.
-          // By default we support CSS Containers with the extension .module.css
+          // By default we support CSS components with the extension .module.css
           {
             test: cssRegex,
             exclude: cssModuleRegex,
@@ -357,7 +357,7 @@ module.exports = {
             // See https://github.com/webpack/webpack/issues/6571
             sideEffects: true,
           },
-          // Adds support for CSS Containers (https://github.com/css-modules/css-modules)
+          // Adds support for CSS components (https://github.com/css-modules/css-modules)
           // using the extension .module.css
           {
             test: cssModuleRegex,
@@ -371,7 +371,7 @@ module.exports = {
           // Opt-in support for SASS. The logic here is somewhat similar
           // as in the CSS routine, except that "sass-loader" runs first
           // to compile SASS files into CSS.
-          // By default we support SASS Containers with the
+          // By default we support SASS components with the
           // extensions .module.scss or .module.sass
           {
             test: sassRegex,
@@ -389,7 +389,7 @@ module.exports = {
             // See https://github.com/webpack/webpack/issues/6571
             sideEffects: true,
           },
-          // Adds support for CSS Containers, but using SASS
+          // Adds support for CSS components, but using SASS
           // using the extension .module.scss or .module.sass
           {
             test: sassModuleRegex,
