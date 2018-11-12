@@ -4,9 +4,10 @@ import './App.scss';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Routes } from '../Routes'
 import { Main } from '../Navigation/Main'
-import Footer from '../Footer/Footer'
+import TodoFilter from '../Todo/TodoFilter'
 import AddTodo from '../Todo/AddTodo'
 import TodoList from '../Todo/TodoList'
+// import Link from '../Todo/Link'
 
 class  App extends Component {
 
@@ -36,7 +37,8 @@ class  App extends Component {
 
               <AddTodo />
               <TodoList />
-              <Footer />
+              {/*<Link />*/}
+              <TodoFilter />
 
           </div>
         </Router>
