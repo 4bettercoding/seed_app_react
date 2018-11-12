@@ -5,9 +5,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Routes } from '../Routes'
 import { Main } from '../Navigation/Main'
 import Footer from '../Footer/Footer'
-import AddTodo from '../../containers/AddTodo'
-import VisibleTodoList from '../../containers/VisibleTodoList'
-
+import AddTodo from '../Todo/AddTodo'
+import TodoList from '../Todo/TodoList'
 
 class  App extends Component {
 
@@ -36,9 +35,8 @@ class  App extends Component {
               {/*<Routes/>*/}
 
               <AddTodo />
-              <VisibleTodoList />
+              <TodoList />
               <Footer />
-
 
           </div>
         </Router>
