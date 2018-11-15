@@ -35,8 +35,7 @@ const mapStateToProps = ( state ) =>  {
     // console.log('Value of state and todo list', state.TodoList);
     return { isLoading: state.TodoList.isLoading,
              isError: state.TodoList.isError,
-             payload: state.TodoList.payload,
-             getTodoList: state.TodoList.getTodoList }}
+             payload: state.TodoList.payload }}
 
 const mapDispatchToProps = { getTodoList }
 
