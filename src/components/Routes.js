@@ -4,7 +4,7 @@ import { About } from './About/About'
 import { Code } from './Code/Code'
 import { Contact } from './Contact/Contact'
 import { Info } from './Info/Info'
-import { TodoList } from './TodoList/TodoList'
+// import { TodoList } from './TodoList/TodoList'
 import  React  from 'react'
 
 const Routes = () => {
@@ -16,7 +16,7 @@ const Routes = () => {
             <Route exact path="/code" component={Code}/>
             <Route exact path="/contact" component={Contact}/>
             <Route exact path="/info" component={Info}/>
-            <Route path="/Todolist" component={TodoList}/>
+            {/*<Route path="/Todolist" component={TodoList}/>*/}
         </div>
     )
 }

@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
-import getTodoList from '../../actions/TodoList'
+import { getTodoList} from '../../actions/TodoList'
 import { connect } from 'react-redux'
-import { withRouter } from "react-router";
+// import { withRouter } from "react-router";
 
 import './TodoList.scss';
+// import {toggleTodo, VisibilityFilters} from "../../actions";
 
-export class TodoList extends Component {
+class TodoList extends Component {
+//export class TodoList extends Component {
 
     componentDidMount() {
 
-        console.log(this.props.getTodoList())
+        this.props.getTodoList()
 
     }
 
     render() {
+
+        console.log('Value of loading', this.props.isLoading)
+        console.log('Value of error', this.props.isError)
+        console.log('Value of payload', this.props.payload.data)
 
         return (
 
@@ -25,9 +31,26 @@ export class TodoList extends Component {
 
 }
 
+const mapStateToProps = ( state ) =>  {
+    // console.log('Value of state and todo list', state.TodoList);
+    return { isLoading: state.TodoList.isLoading,
+             isError: state.TodoList.isError,
+             payload: state.TodoList.payload,
+             getTodoList: state.TodoList.getTodoList }}
 
-const mapStateToProps = state => state;
 const mapDispatchToProps = { getTodoList }
 
-withRouter(connect(mapStateToProps, mapDispatchToProps)(TodoList));
+export default connect(mapStateToProps, mapDispatchToProps)(TodoList)
 
+// const mapStateToProps = state => ({
+//     todos: getVisibleTodos(state.todos, state.visibilityFilter)
+// })
+//
+// const mapDispatchToProps = dispatch => ({
+//     toggleTodo: id => dispatch(toggleTodo(id))
+// })
+//
+// export default connect(
+//     mapStateToProps,
+//     mapDispatchToProps
+// )(TodoList)

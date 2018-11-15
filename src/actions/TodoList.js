@@ -25,4 +25,4 @@ const getTodoList = () => {
     }
 }
 
-export default { getTodoList }
+export { getTodoList }

@@ -17,11 +17,11 @@ const Main = () => {
                 <button>contact</button>
             </Link>
             <Link to="/info">
-                <button>info</button>
+                <button>really to do list</button>
             </Link>
-            <Link to="/TodoList">
-                <button>todo list</button>
-            </Link>
+            {/*<Link to="/TodoList">*/}
+                {/*<button>todo list</button>*/}
+            {/*</Link>*/}
         </div>
     );
 };

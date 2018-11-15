@@ -6,7 +6,7 @@ let INITIAL_STATE = {
     payload: {}
 }
 
-const todoList = (state = INITIAL_STATE, action) => {
+const TodoList = (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case ITEM_LIST_PROCESSING:
             return {
@@ -34,4 +34,4 @@ const todoList = (state = INITIAL_STATE, action) => {
     }
 }
 
-export default todoList
+export default TodoList
