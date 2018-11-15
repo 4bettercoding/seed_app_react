@@ -1,0 +1,3 @@
+export const ITEM_LIST_PROCESSING = 'PROCESSING';
+export const ITEM_LIST_RECEIVED = 'RECEIVED';
+export const ITEM_LIST_ERROR = 'ERROR';

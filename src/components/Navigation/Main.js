@@ -19,6 +19,9 @@ const Main = () => {
             <Link to="/info">
                 <button>info</button>
             </Link>
+            <Link to="/TodoList">
+                <button>todo list</button>
+            </Link>
         </div>
     );
 };
