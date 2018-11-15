@@ -1,6 +1,5 @@
 const todos = (state = [], action) => {
 
-    console.log('Value of action from todo', action)
     switch (action.type) {
         case 'ADD_TODO':
             return [

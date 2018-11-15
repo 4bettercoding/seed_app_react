@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import getTodoList from '../../actions/TodoList'
 import { connect } from 'react-redux'
-import { withRouter } from 'react-router-dom';
+import { withRouter } from "react-router";
 
 import './TodoList.scss';
 
-class TodoList extends Component {
+export class TodoList extends Component {
+
+    componentDidMount() {
+
+        console.log(this.props.getTodoList())
+
+    }
 
     render() {
 
@@ -23,7 +29,5 @@ class TodoList extends Component {
 const mapStateToProps = state => state;
 const mapDispatchToProps = { getTodoList }
 
-export { TodoList }
-
-// export default withRouter(connect(mapStateToProps, mapDispatchToProps)(TodoList));
+withRouter(connect(mapStateToProps, mapDispatchToProps)(TodoList));
 
